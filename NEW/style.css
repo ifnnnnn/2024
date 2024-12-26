@@ -1,0 +1,42 @@
+/* Custom Styles */
+
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    background: url('https://via.placeholder.com/1920x1080') no-repeat center center / cover;
+    position: relative;
+    cursor: pointer; /* 鼠標顯示為手型，暗示可點擊 */
+}
+
+.hero-section .stretched-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* 確保在最上層可以被點擊 */
+}
+
+.hero-section .container {
+    z-index: 2; /* 讓文字和內容顯示在按鈕之上 */
+    position: relative;
+    color: rgb(132, 51, 51);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+
+/* Product Card */
+.product-card img {
+    transition: transform 0.3s ease;
+}
+
+.product-card img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+}
