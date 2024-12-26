@@ -6,7 +6,7 @@
 
 .FeaturedProducts-image-wrapper img {
     transition: transform 0.4s ease, filter 0.4s ease; /* 動畫效果的過渡時間 */
-    transform: scale(1); /* 初始狀態 */
+    transform: scale(1); /* 初始狀態 */ 
     filter: brightness(100%);
 }
 
@@ -19,6 +19,7 @@
     height: 80vh;
     position: relative;
     overflow: hidden;
+    
 }
 
 .hero-section img {
@@ -27,7 +28,3 @@
     height: 100%;
 }
 
-.parallax-text {
-    transition: transform 0.2s ease-out;
-    will-change: transform;
-}
