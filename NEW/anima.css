@@ -1,18 +1,18 @@
-/* 商品圖片的動畫效果 */
+
 .FeaturedProducts-image-wrapper {
-    overflow: hidden; /* 確保圖片不會溢出 */
+    overflow: hidden; 
     position: relative;
 }
 
 .FeaturedProducts-image-wrapper img {
-    transition: transform 0.4s ease, filter 0.4s ease; /* 動畫效果的過渡時間 */
-    transform: scale(1); /* 初始狀態 */ 
+    transition: transform 0.4s ease, filter 0.4s ease; 
+    transform: scale(1); 
     filter: brightness(100%);
 }
 
 .Featuredproduct-image-wrapper:hover img {
-    transform: scale(1.1); /* 鼠標懸停時放大 */
-    filter: brightness(90%); /* 暗化效果 */
+    transform: scale(1.1); 
+    filter: brightness(90%); 
 }
 
 .hero-section {
