@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="anima.css">
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
 
 <body>
@@ -35,7 +37,7 @@
 
     
         <header class="hero-section position-relative text-center text-black">
-            <img src="/NEW/pic/gif1.gif" alt="Hero Image" class="w-100 position-absolute" style="object-fit: cover; height: 100vh; z-index: -1;">
+            <img src="/pic/gif1.gif" alt="Hero Image" class="w-100 position-absolute" style="object-fit: cover; height: 100vh; z-index: -1;">
             <div section id="parallax-text" class="position-relative " style="z-index: 1;">
                 <div class="parallax-container"></div>
                     <h1 class="parallax-text display-3 fw-bold">REPRESENT</h1>
@@ -53,7 +55,7 @@
                     <div v-for="item in Shop" :key="item.id" class="col-md-3">
                         <div class="parallax-wrapper">
                             <div class="card product-card border-0">
-                                <img :src="'/NEW/pic/' + item.imgSrc" class="card-img-top" alt="Product">
+                                <img :src="'/pic/' + item.imgSrc" class="card-img-top" alt="Product">
                             </div>
                         </div>
                     </div>
@@ -68,7 +70,7 @@
                         <div class="position">
                             <div class="card product-card border-0"></div>
                             <img 
-                            :src="item.isHovered ? '/NEW/pic/' + item.hoverImgSrc : '/NEW/pic/' + item.imgSrc" 
+                            :src="item.isHovered ? '/pic/' + item.hoverImgSrc : '/pic/' + item.imgSrc" 
                             class="card-img-top img-fluid" 
                             alt="Product"
                             @mouseover="item.isHovered = true"
@@ -229,7 +231,7 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="vue.js"></script>
+    <script src="bs5vue.js"></script>
     <script src="script.js"></script>
 </body>
 

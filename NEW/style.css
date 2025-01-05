@@ -103,7 +103,7 @@ body {
     flex: 1; 
 }
 #gallery {
-    background: url('/NEW/pic/gif2.gif') no-repeat center center;
+    background: url('/pic/gif2.gif') no-repeat center center;
     background-size: cover;
     color: white; 
     position: relative;
